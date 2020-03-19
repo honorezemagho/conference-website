@@ -1,0 +1,420 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+
+/* Header Styling */
+
+header {
+    background-color: rgba(0, 153, 204, .8);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-header {
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+}
+
+.primary-header {
+    display: flex;
+    background-color: rgba(0, 153, 204, .8);
+}
+
+.logo {
+    flex: 5%;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 48px;
+    font-weight: 100;
+    letter-spacing: .5px;
+    line-height: 44px;
+    border-top: 4px solid #CCFFCC;
+    color: white;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+
+.primary-nav {
+    flex: 95%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.text-white {
+    color: white;
+}
+
+.bg-white {
+    background-color: white;
+    width: 100%;
+}
+
+.lightblue {
+    color: #0099CC;
+}
+
+.tagline {
+    flex: 50%;
+}
+
+.primary-nav ul {
+    flex: 50%;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+.primary-nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #66CCFF;
+    border-radius: 10px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #66CCFF;
+}
+
+.primary-nav ul li {
+    flex: 50%;
+}
+
+
+/*Main page style */
+
+.container {
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 90%;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 30px 20px;
+}
+
+.hero p {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 20px 50px 50px;
+    margin-bottom: 80px;
+}
+
+.cta {
+    text-decoration: none;
+    padding: 20px 50px;
+    border: 5px solid #66CCFF;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 25px;
+    background-color: rgba(0, 153, 204, .8);
+}
+
+.description {
+    display: flex;
+    width: 100%;
+    background-color: #CCFFCC;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.teaser {
+    flex: 33%;
+    margin: 1.5%;
+}
+
+.teaser a:hover h3 {
+    color: #a9b2b9;
+}
+
+.teaser img {
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 22px;
+    max-width: 100%;
+}
+
+
+/* Footer of the page */
+
+.primary-footer {
+    display: flex;
+    background: rgba(0, 153, 204, .8);
+    padding: 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.primary-footer nav {
+    flex: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.primary-footer ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.primary-footer ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #66CCFF;
+    border-radius: 10px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.logo-footer {
+    flex: 5%;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 28px;
+    font-weight: 100;
+    letter-spacing: .5px;
+    line-height: 44px;
+    border-top: 4px solid #CCFFCC;
+    color: white;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+
+
+/* Speaker Page */
+
+.page-header {
+    height: 40vh;
+    margin-bottom: 25px;
+    color: rgba(0, 153, 204, .8);
+    text-align: center;
+}
+
+.page-header h2 {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.page-header p {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 20px 50px 50px;
+}
+
+.speakers {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.speaker {
+    padding-top: 50px;
+    flex: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    background-color: #CCFFCC;
+}
+
+.speaker-description {
+    flex: 60%;
+    margin: 0 20px;
+}
+
+.speaker-info {
+    text-align: center;
+    flex: 40%;
+    margin: 0 0 50px;
+}
+
+.speaker-info img {
+    border-radius: 50%;
+}
+
+
+/* Schedule Page */
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #c6c7cc;
+    /* border-bottom: 1px solid #c6c7cc; */
+    padding: 10px 15px;
+}
+
+td a {
+    text-decoration: none;
+    color: rgba(0, 153, 204, .8);
+}
+
+thead {
+    background-color: rgba(0, 153, 204, .8);
+    color: white;
+}
+
+thead th {
+    font-size: 25px;
+}
+
+thead td,
+tbody tr:first-child,
+tbody tr:nth-of-type(4) {
+    text-align: center;
+}
+
+tbody tr {
+    padding: 10px 0;
+}
+
+
+/* Venue Page Styling */
+
+.venue-row {
+    background-color: #CCFFCC;
+    width: 100%;
+}
+
+.venue {
+    display: flex;
+    height: 75vh;
+    padding: 50px;
+    justify-content: center;
+}
+
+.localisation {
+    flex: 25%;
+    line-height: 1.5em;
+    align-self: center;
+}
+
+.venue-map {
+    flex: 75%;
+}
+
+.localisation p a {
+    text-decoration: none;
+    line-height: 1.5em;
+}
+
+
+/* Register Page */
+
+.purchase {
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #CCFFCC;
+    width: 100%;
+}
+
+.benefits {
+    flex: 80%;
+    padding: 0 25px;
+    margin: 0 25px;
+}
+
+.benefits h2 {
+    font-size: 25px;
+}
+
+.benefits p {
+    text-align: justify;
+    margin: 0 60px 20px;
+}
+
+.benefits h4,
+.benefits h5 {
+    font-size: 18px;
+    color: rgba(0, 153, 204, .8);
+}
+
+.register-form {
+    flex: 20%;
+}
+
+.why-attend li {
+    list-style: circle;
+    margin: 0 0 22px 30px;
+}
+
+form {
+    margin: 22px 0;
+}
+
+input,
+select,
+textarea {
+    font: 300 16px/22px "lato", "open sans", "helvetica neue", helvetica, arial, sans-serif;
+}
+
+.register-group Label {
+    color: #648880;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.register-group input,
+.register-group select,
+.register-group textarea {
+    border: 1px solid #c6c9cc;
+    border-radius: 5px;
+    display: block;
+    margin: 5px 0 27px 0;
+    padding: 5px 8px;
+}
+
+.register-group input,
+.register-group textarea {
+    width: 100%;
+}
+
+.register-group select {
+    height: 34px;
+    width: 60px;
+}
+
+.register-group textarea {
+    height: 78px;
+}
+
+.btn-default {
+    background-color: #0099CC;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
